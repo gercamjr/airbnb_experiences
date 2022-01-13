@@ -36,11 +36,12 @@ body {
     font-size: 10.24px;
 }
 
-.card p {
-    line-height: 13px;
+.card {
     font-size: 12px;
-    margin: 0;
-    margin-top: 5px;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 
@@ -87,12 +88,11 @@ section {
 /* card */
 
 .card {
-    padding: 0;
     width: 176px;
-    height: 303px;
-    background-color: #faa;
-    display: flex;
-    flex-direction: column;
+}
+
+.gray {
+    color: #918E9B;
 }
 
 .card__image {
@@ -101,8 +101,7 @@ section {
 
 .card__stats {
     display: flex;
-    margin-top: 5px;
-    margin-left: 5px;
+    align-items: center;
 }
 
 .card__status {
@@ -117,22 +116,5 @@ section {
 }
 
 .card__star {
-    width: 14px;
     height: 14px;
-    align-self: center;
-    margin: 0;
-    margin-top: 5px;
-    margin-right: 5px;
-}
-
-.card__rating {
-    margin: 0;
-}
-
-.card__review-count {
-    margin: 0;
-}
-
-.card__title {
-    margin-top: 39px;
 }
