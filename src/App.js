@@ -6,7 +6,7 @@ import Card from "./components/Card";
 import data from "./data";
 
 function App() {
-  const cards = data.map(code=><Card img={code.coverImg} rating={code.stats.rating} reviewCount={code.stats.reviewCount} location={code.location} title={code.title} price={code.price} />)
+  const cards = data.map(code=><Card key={code.id} {...code} />)
   return (
     <div className="App">
     <Navbar />
