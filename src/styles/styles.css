@@ -78,6 +78,8 @@ section {
 
 .hero__title {
     margin-bottom: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .hero__summary {
@@ -89,10 +91,16 @@ section {
 
 .cards {
     display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
 }
 
 .card {
     width: 176px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .gray {
@@ -122,4 +130,8 @@ section {
 
 .card__star {
     height: 14px;
+}
+
+.card__price {
+    margin-top: auto;
 }
